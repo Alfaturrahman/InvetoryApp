@@ -26,6 +26,9 @@ Repository sudah disiapkan untuk Railway via:
 
 - `railway.json`
 - `Procfile`
+- `nixpacks.toml`
+
+Catatan: build Railway dikonfigurasi fokus ke PHP/Composer agar tidak gagal pada requirement Node Vite.
 
 ### 1) Buat project Railway dari GitHub
 
@@ -70,6 +73,10 @@ php artisan db:seed --force
 - Buka URL app Railway
 - Cek login
 - Cek halaman admin dan export laporan
+
+### Troubleshooting build error Node/Vite di Railway
+
+Jika sebelumnya muncul error Node 18 saat `npm run build`, gunakan konfigurasi yang sudah ada di repo ini (`nixpacks.toml`) lalu lakukan redeploy ulang. Konfigurasi ini tidak menjalankan build frontend Vite di Railway.
 
 ## Akun Demo Seed
 
