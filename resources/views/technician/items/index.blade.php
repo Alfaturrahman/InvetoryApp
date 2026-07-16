@@ -43,7 +43,7 @@
                             <input type="number" name="requested_qty" min="1" max="{{ max(1, $item->stock) }}" value="1" required>
                             <input type="date" name="due_at" value="{{ now()->addDays(3)->toDateString() }}" required>
                             <input type="text" name="notes" placeholder="Catatan (opsional)">
-                            <x-ui.button type="submit" variant="primary" {{ $item->stock < 1 || $item->status !== 'normal' ? 'disabled' : '' }}>Ajukan</x-ui.button>
+                            <x-ui.button type="submit" variant="primary" :disabled="$item->stock < 1 || $item->status !== 'normal'">Ajukan</x-ui.button>
                         </form>
                     </td>
                 </tr>
