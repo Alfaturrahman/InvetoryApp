@@ -1,6 +1,9 @@
+[variables]
+NIXPACKS_PHP_VERSION = "8.3"
+
 [phases.install]
 cmds = [
-  "composer install --no-dev --optimize-autoloader --no-interaction"
+  "COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader --no-interaction"
 ]
 
 [phases.build]

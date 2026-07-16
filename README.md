@@ -80,6 +80,8 @@ Jika sebelumnya muncul error Node 18 saat `npm run build`, gunakan konfigurasi y
 
 Jika muncul error Nix `undefined variable 'composer'`, pastikan menggunakan versi `nixpacks.toml` terbaru di repo ini (tanpa deklarasi paket `composer` pada phase setup), lalu trigger deploy ulang.
 
+Jika muncul error lock file tidak kompatibel karena PHP `8.2.x`, pastikan build Railway membaca `NIXPACKS_PHP_VERSION=8.3` dari `nixpacks.toml`, lalu redeploy.
+
 ## Akun Demo Seed
 
 - Admin: `admin@multitech.test` / `password`
