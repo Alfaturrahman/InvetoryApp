@@ -8,10 +8,7 @@ cmds = [
 
 [phases.build]
 cmds = [
-  "APP_URL=http://localhost php artisan package:discover --ansi",
-  "APP_URL=http://localhost php artisan config:cache",
-  "APP_URL=http://localhost php artisan route:cache",
-  "APP_URL=http://localhost php artisan view:cache"
+  "APP_URL=http://localhost php artisan package:discover --ansi"
 ]
 
 [start]
