@@ -78,6 +78,8 @@ php artisan db:seed --force
 
 Jika sebelumnya muncul error Node 18 saat `npm run build`, gunakan konfigurasi yang sudah ada di repo ini (`nixpacks.toml`) lalu lakukan redeploy ulang. Konfigurasi ini tidak menjalankan build frontend Vite di Railway.
 
+Jika muncul error Nix `undefined variable 'composer'`, pastikan menggunakan versi `nixpacks.toml` terbaru di repo ini (tanpa deklarasi paket `composer` pada phase setup), lalu trigger deploy ulang.
+
 ## Akun Demo Seed
 
 - Admin: `admin@multitech.test` / `password`
