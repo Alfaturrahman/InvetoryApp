@@ -3,15 +3,15 @@ NIXPACKS_PHP_VERSION = "8.3"
 
 [phases.install]
 cmds = [
-  "COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader --no-interaction"
+  "COMPOSER_ALLOW_SUPERUSER=1 APP_URL=http://localhost composer install --no-dev --optimize-autoloader --no-interaction"
 ]
 
 [phases.build]
 cmds = [
-  "php artisan package:discover --ansi",
-  "php artisan config:cache",
-  "php artisan route:cache",
-  "php artisan view:cache"
+  "APP_URL=http://localhost php artisan package:discover --ansi",
+  "APP_URL=http://localhost php artisan config:cache",
+  "APP_URL=http://localhost php artisan route:cache",
+  "APP_URL=http://localhost php artisan view:cache"
 ]
 
 [start]

@@ -82,6 +82,16 @@ Jika muncul error Nix `undefined variable 'composer'`, pastikan menggunakan vers
 
 Jika muncul error lock file tidak kompatibel karena PHP `8.2.x`, pastikan build Railway membaca `NIXPACKS_PHP_VERSION=8.3` dari `nixpacks.toml`, lalu redeploy.
 
+Jika muncul `Invalid URI: Host is malformed` saat `php artisan package:discover`, pastikan `APP_URL` di Railway memakai URL valid tanpa tanda placeholder.
+
+Contoh benar:
+
+`APP_URL=https://inventoryapp-production.up.railway.app`
+
+Contoh salah:
+
+`APP_URL=https://<domain-app-kamu>.up.railway.app`
+
 ## Akun Demo Seed
 
 - Admin: `admin@multitech.test` / `password`
