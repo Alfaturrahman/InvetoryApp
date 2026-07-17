@@ -400,7 +400,7 @@
 <header class="topbar">
     <div>
         <h1>Inventaris Fiber Optic - PT Multitech Infomedia</h1>
-        <small>Laravel App Demo</small>
+        <small>Sistem Inventaris</small>
     </div>
     @auth
         <div class="identity">

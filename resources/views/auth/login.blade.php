@@ -105,11 +105,6 @@
         <button type="submit">Masuk</button>
     </form>
 
-    <div class="help">
-        Demo admin: admin@multitech.test / password
-        <br>
-        Demo teknisi: teknisi1@multitech.test / password
-    </div>
 </div>
 </body>
 </html>

@@ -92,7 +92,7 @@ Contoh salah:
 
 `APP_URL=https://<domain-app-kamu>.up.railway.app`
 
-## Akun Demo Seed
+## Akun Seed
 
 - Admin: `admin@multitech.test` / `password`
 - Teknisi: `teknisi1@multitech.test` / `password`
